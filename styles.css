@@ -1,0 +1,232 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #003366;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section h1 {
+    font-size: 2.2em;
+    color: #003366;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #666;
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Projects Section */
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects ul li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#projects ul li:hover {
+    transform: translateY(-5px);
+}
+
+#projects ul li strong {
+    color: #003366;
+    font-size: 1.2em;
+}
+
+/* Internship Section */
+#internships ul li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#internships ul li:hover {
+    transform: translateY(-5px);
+}
+
+#internships ul li strong {
+    color: #003366;
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+#contact a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #d9e7f5;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffffc0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        display: block;
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    section h1 {
+        font-size: 1.8em;
+    }
+
+    #projects ul li, #internships ul li {
+        padding: 15px;
+    }
+}
